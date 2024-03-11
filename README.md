@@ -132,3 +132,12 @@ This is simple LMS application that allows students to select courses and view t
 | GET    | `/lecture/:id`       | Get a specific Lecture     | Yes                  |
 | PUT    | `/lecture/update/:id`     | 	Update a Lecture        | 	Yes (Admin)             |
 | DELETE | `/lecture/delete/:id`       | 	Delete a Lecture | Yes (Admin)                      |
+
+
+
+## Admin Credentials
+
+To access the admin features of this project, please use the following credentials:
+
+- **Email:** Admin@gmail.com
+- **Password:** Asdf
