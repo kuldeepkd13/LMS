@@ -8,7 +8,7 @@ const SignUpPage = () => {
 
   const handleSignUp = async () => {
     try {
-      const response = await fetch('https://lms-xhso.onrender.com/user/register', {
+      const response = await fetch('https://lms-osmi.onrender.com/user/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

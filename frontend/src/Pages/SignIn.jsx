@@ -8,7 +8,7 @@ const SignInPage = () => {
 
   const handleSignIn = async () => {
     try {
-      const response = await fetch('https://lms-xhso.onrender.com/user/login', {
+      const response = await fetch('https://lms-osmi.onrender.com/user/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ const AdminDashboard = () => {
     const fetchCourseDetails = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch(`https://lms-xhso.onrender.com/course/getAllCourse`, {
+        const response = await fetch(`https://lms-osmi.onrender.com/course/getAllCourse`, {
           headers: {
             'Content-Type': 'application/json',
             "Authorization": `${token}`
@@ -45,7 +45,7 @@ const AdminDashboard = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`https://lms-xhso.onrender.com/course/create`, {
+      const response = await fetch(`https://lms-osmi.onrender.com/course/create`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -70,7 +70,7 @@ const AdminDashboard = () => {
   const handleDeleteCourse = async (courseId) => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`https://lms-xhso.onrender.com/course/${courseId}`, {
+      const response = await fetch(`https://lms-osmi.onrender.com/course/${courseId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
@@ -113,7 +113,7 @@ const AdminDashboard = () => {
     e.preventDefault();
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch(`https://lms-xhso.onrender.com/course/${updatingCourse._id}`, {
+      const response = await fetch(`https://lms-osmi.onrender.com/course/${updatingCourse._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

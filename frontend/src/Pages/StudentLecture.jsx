@@ -10,7 +10,7 @@ const StudentLecture = () => {
     const fetchCourseDetails = async () => {
       try {
         const token = localStorage.getItem('token');
-        const response = await fetch(`https://lms-xhso.onrender.com/course/${courseId}/lectures`, {
+        const response = await fetch(`https://lms-osmi.onrender.com/course/${courseId}/lectures`, {
           headers: {
             'Content-Type': 'application/json',
             "Authorization": `${token}`
