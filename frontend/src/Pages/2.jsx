@@ -7,7 +7,7 @@ const StudentDashboard = () => {
   const [courses, setCourses] = useState([]);
   const [selectedCourses, setSelectedCourses] = useState([]);
 
-  
+  console.log(localStorage.getItem("userRole"));
   useEffect(() => {
     const fetchCourseDetails = async () => {
       try {

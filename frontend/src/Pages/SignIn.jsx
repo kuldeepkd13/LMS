@@ -22,7 +22,7 @@ const SignInPage = () => {
         localStorage.setItem('token', data.token); // Save token to localStorage
         localStorage.setItem('userRole', data.user.role);
         localStorage.setItem('isLoggedIn', 'true');
-        localStorage.setItem('isSelected ', data.user.isSelected)
+        localStorage.setItem('isSelected', data.user.isSelected)
         if(data.user.role==="Admin"){
           window.location.href = '/AdminDashboard';
         }else{
