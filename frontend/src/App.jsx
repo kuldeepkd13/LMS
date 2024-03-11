@@ -31,7 +31,7 @@ function App() {
 
       if (response.ok) {
         alert(data.message); // Show success message
-        localStorage.clear(); 
+        localStorage.clear();
         setIsLoggedIn(false); // Update isLoggedIn state in App component
         window.location.href = '/';
       } else {
