@@ -12,7 +12,7 @@ const StudentDashboard = () => {
       try {
         const token = localStorage.getItem('token');
 
-        let endpoint = isSelected ? 'http://localhost:4500/user/getcourses' : 'http://localhost:4500/course/getAllCourse';
+        let endpoint = isSelected ? 'https://lms-xhso.onrender.com/user/getcourses' : 'https://lms-xhso.onrender.com/course/getAllCourse';
 
 
         const response = await fetch(endpoint, {
@@ -53,7 +53,7 @@ const StudentDashboard = () => {
   const handleSubmit = async () => {
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('http://localhost:4500/user/add-courses', {
+      const response = await fetch('https://lms-xhso.onrender.com/user/add-courses', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
