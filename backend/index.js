@@ -1,5 +1,5 @@
 const express = require("express");
-const dbConnection = require("./config/db"); 
+const { connection } = require("./config/db");
 const { userRoute } = require("./routes/userRoute");
 const cors = require('cors');
 const { lectureRoute } = require("./routes/lectureRoute");
@@ -24,12 +24,14 @@ app.use("/lecture" , lectureRoute)
 app.use("/course" , cousreRoute)
 
 
-app.listen(Port, () => {
+app.listen(Port,async()=>{
     try {
-        dbConnection; 
+        await connection
+        console.log("Connect to Mongodb")
     } catch (error) {
-        console.error("MongoDB connection error:", error);
-        console.log("Db is not Connected");
+        console.log(error)
+        console.log("Db is not Connected")
     }
-    console.log(`Server is running at ${Port}`);
-});
+    console.log(`server is running at ${Port}`)
+
+})
